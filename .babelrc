@@ -1,0 +1,33 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "loose": true,
+        "modules": "commonjs"
+      }
+    ],
+    [
+      "@babel/preset-react",
+      {
+        "development": false
+      }
+    ],
+    [
+      "babel-preset-proposals",
+      {
+        "loose": true,
+        "decorators": true,
+        "classProperties": true,
+        "exportDefaultFrom": true,
+        "exportNamespaceFrom": true,
+        "absolutePaths": true
+      }
+    ]
+  ],
+  "ignore": [
+    "**/*.spec.js",
+    "**/*.test.js",
+    "**/__tests__/"
+  ]
+}
